@@ -20,26 +20,44 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECURITY NOTE: use a long and complex key comprised of uppercase, lowercase, numbers, and special characters.
+# SECURITY NOTE: use a key comprised of uppercase, lowercase, numbers, and special characters (minimum 50 characters).
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # SECURITY NOTE: the DEBUG setting should be set to a boolean value.
-DEBUG = os.environ.get('DEBUG', 'False') == 'True'
+DEBUG = os.environ.get('DEBUG', 'false').lower() == 'true'
 
 # SECURITY WARNING: don't expose your project to malicious requests!
 # SECURITY NOTE: if DEBUG is set to `false`, ALLOWED_HOSTS requires a value.
 ALLOWED_HOSTS = []
 
 # Add any additional ALLOWED_HOSTS, if provided.
-if os.environ.get('ALLOWED_HOSTS'):
-    ALLOWED_HOSTS.append(os.environ.get('ALLOWED_HOSTS').split(', '))
+if os.environ.get('ALLOWED_HOSTS_LIST'):
+    ALLOWED_HOSTS_LIST = os.environ.get('ALLOWED_HOSTS_LIST').split(', ')
+    for host in ALLOWED_HOSTS_LIST:
+        ALLOWED_HOSTS.append(host)
 
 # Add any development-specific ALLOWED_HOSTS, if DEBUG is set to `true`.
 if DEBUG:
     ALLOWED_HOSTS.append('localhost') # Add localhost to ALLOWED_HOSTS.
     ALLOWED_HOSTS.append('127.0.0.1') # Add IPv4 loopback address to ALLOWED_HOSTS.
     ALLOWED_HOSTS.append('[::1]') # Add IPv6 loopback address to ALLOWED_HOSTS.
+
+# SECURITY WARNING: don't let the CSRF cookie travel across insecure connections!
+# SECURITY NOTE: the CSRF_COOKIE_SECURE should be set to a boolean value.
+CSRF_COOKIE_SECURE = True
+
+# SECURITY WARNING: don't let the session cookie travel across insecure connections!
+# SECURITY NOTE: the SESSION_COOKIE_SECURE should be set to a boolean value.
+SESSION_COOKIE_SECURE = True
+
+# SECURITY TODO: Consider HSTS
+# See: https://django-secure.readthedocs.io/en/latest/middleware.html#http-strict-transport-security
+# SECURE_HSTS_SECONDS = 60 # HTTP Strict Transport Security
+
+# SECURITY TODO: Consider SSL Redirect
+# https://django-secure.readthedocs.io/en/latest/middleware.html#ssl-redirect
+# SECURE_SSL_REDIRECT = True # Redirect to HTTPS
 
 
 # Application definition
