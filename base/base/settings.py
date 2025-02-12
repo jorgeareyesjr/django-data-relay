@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/5.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -20,12 +20,26 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-4=1dyh2@r)*f$ghfk%br-3h)8#u#_t3(k(js_z8yriv$d(p7cp'
+# SECURITY NOTE: use a long and complex key comprised of uppercase, lowercase, numbers, and special characters.
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# SECURITY NOTE: the DEBUG setting should be set to a boolean value.
+DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
+# SECURITY WARNING: don't expose your project to malicious requests!
+# SECURITY NOTE: if DEBUG is set to `false`, ALLOWED_HOSTS requires a value.
 ALLOWED_HOSTS = []
+
+# Add any additional ALLOWED_HOSTS, if provided.
+if os.environ.get('ALLOWED_HOSTS'):
+    ALLOWED_HOSTS.append(os.environ.get('ALLOWED_HOSTS').split(', '))
+
+# Add any development-specific ALLOWED_HOSTS, if DEBUG is set to `true`.
+if DEBUG:
+    ALLOWED_HOSTS.append('localhost') # Add localhost to ALLOWED_HOSTS.
+    ALLOWED_HOSTS.append('127.0.0.1') # Add IPv4 loopback address to ALLOWED_HOSTS.
+    ALLOWED_HOSTS.append('[::1]') # Add IPv6 loopback address to ALLOWED_HOSTS.
 
 
 # Application definition
