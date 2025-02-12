@@ -1,6 +1,6 @@
 # django-data-relay
 
-The **django-data-relay**, is a web application built with the Django framework designed to act as an intermediary for data transmission between front-end and back-end systems. It can connect to a variety of databases and provide data, resources, and services to connected applications. This project includes a base django project template that can be used and expanded upon, as needed.
+The **django-data-relay** is a web application built with the Django framework designed to act as an intermediary for data transmission between front-end and back-end systems. It can connect to a variety of databases and provide data, resources, and services to connected applications. This project includes a base django project template that can be used and expanded upon, as needed.
 
 ## Table of Contents
 - [Abstract](#abstract)
@@ -82,9 +82,7 @@ python manage.py runserver
 
 ## 📬 Feedback and Contributions
 
-Whether you have feedback, have encountered any bugs, or have suggestions for enhancements, you're encouraged to connect! Each insight and contribution is an opportunity to make the `django-data-relay` more robust and user-friendly!
-
-> Please consider the below factors while contributing.
+Whether you have feedback, have encountered any bugs, or have suggestions for enhancements, you're encouraged to connect! Each insight and contribution is an opportunity to make the **django-data-relay** more robust and user-friendly! Please consider the below factors while contributing.
 
 - Code Style:
     Maintain a consistent code style for readability.
