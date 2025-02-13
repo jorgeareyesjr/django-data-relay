@@ -171,6 +171,7 @@ cython_debug/
 .pypirc
 
 # Ignore SSL certificates and private keys
+*.crt
 *.key
 *.pem
 id_rsa
