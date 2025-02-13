@@ -1,6 +1,9 @@
 # django-data-relay
 
-The **django-data-relay** is a web application built with the Django framework designed to act as an intermediary for data transmission between front-end and back-end systems. It can connect to a variety of databases and provide data, resources, and services to connected applications. This project includes a base django project template that can be used and expanded upon, as needed.
+The **django-data-relay** is a web application designed to serve as a bridge between front-end and back-end systems, facilitating seamless data transfer between applications. Built with [Django](https://www.djangoproject.com/), a free and open-source Python web framework, the **django-data-relay** can collect, aggregate, and provide data from various sources to different destinations in a rapid and scalable fashion. The **django-data-relay** offers a core setup that can be utilized as a template and expanded upon as necessary.
+
+> [!WARNING]
+> ⚠️ The **django-data-relay** not suitable for production use - it runs on Django's lightweight development server, which is intended solely for development purposes. For more information, refer to the [Django documentation](https://docs.djangoproject.com/en/5.1/ref/django-admin/#runserver). Configuring a production server is beyond the scope of this project.
 
 ## Table of Contents
 - [Abstract](#abstract)
@@ -12,17 +15,17 @@ The **django-data-relay** is a web application built with the Django framework d
 
 ## 🌱 Abstract
 
-The **django-data-relay** is designed to serve as a bridge between various data sources and destinations, facilitating the transfer of data between them. Django, a free and open source Python web framework, was selected for this project because it provides a comprehensive toolkit for the rapid development of robust and scalable applications. Some of these out-of-the-box features include:
+The **django-data-relay** acts as an intermediary that receives data from one source and forwards it to another, ensuring that data flows smoothly between different systems. Leveraging Django's comprehensive toolkit, the **django-data-relay** can [simultaneously]() interface with [different database systems]() and provide data, resources, and services to multiple applications. Other key features include:
 
-- Support for connecting to an assortment of different databases.
+- ORM (Object-Relational Mapping) for interacting with databases using Python code instead of SQL queries.
 - A ready-to-use admin interface for managing application data.
-- ORM (Object-Relational Mapping) for interacting with databases using Python code instead of using SQL queries.
-- Useful security features including an authentication system for managing accounts and permissions.
+- Built-in security features, including an authentication system for managing accounts and permissions.
+- A rich ecosystem of third-party packages and libraries.
 - A large and active community for resources and support.
 
 ## 💡 Use Cases
 
-Django is well known and well-suited for building complex and robust web applications. As such, the **django-data-relay** leverages django's powerful built-in features to support a wide variety of applications and services. Some examples include:
+Django is well known and well-suited for building complex and robust web applications. As such, the **django-data-relay** harnesses Django's powerful built-in features to support a diverse range of applications and services. Examples include:
 
 - APIs and web services
 - Content Management Systems (CMS)
@@ -31,7 +34,8 @@ Django is well known and well-suited for building complex and robust web applica
 - Social Network platforms
 - Booking and Reservation systems
 
-> Note: Django is considered an opinionated framework, meaning it is intended to be used alongside a set of conventions and best practices to structure and standardize applications.
+> [!NOTE]
+> Django is considered an opinionated framework, meaning it promotes a set of conventions and best practices to help developers structure and standardize their applications efficiently.
 
 ## 🔧 Prerequisites
 
@@ -65,39 +69,23 @@ git clone https://github.com/jorgeareyesjr/django-data-relay.git
 ## 🚀 Getting Started
 
 ```shell
-# 1. Activate a new virtual environment from the application's root directory
+# 1. Activate a new virtual environment in the application's root directory
 pipenv shell
 
-# 2. Navigate to the base django project
-cd base
-
-# 3. Apply django migrations
-python manage.py migrate
-
-# 4. Run the development server
+# 2. Run the development server
 python manage.py runserver
 ```
 
-> Note: Ensure to deactivate the virtual environment activated for this project when the application is not in use (to close the created virtual environment use the `exit` command). Skipping this step may cause confusion about which virtual environment is active. If a mixup occurs, scripts may rely on the wrong dependencies, possibly leading to unexpected behavior or errors.
+> [!Note]
+> Ensure to deactivate the virtual environment when the application is not in use. Skipping this step may cause confusion about which virtual environment is active. If a mixup occurs, scripts may rely on the wrong dependencies, possibly leading to unexpected behavior or errors. To deactivate the virtual environment, run the `exit` command.
 
 ## 📬 Feedback and Contributions
 
-Whether you have feedback, have encountered any bugs, or have suggestions for enhancements, you're encouraged to connect! Each insight and contribution is an opportunity to make the **django-data-relay** more robust and user-friendly! Please consider the below factors while contributing.
+Whether you have feedback, have encountered any bugs, or have suggestions for enhancements, you're encouraged to connect! Each insight and contribution is an opportunity to make the **django-data-relay** more robust and user-friendly. Please consider the following guidelines while contributing:
 
-- Code Style:
-    Maintain a consistent code style for readability.
-
-- Documentation:
-    Ensure well-documented code for effective collaboration.
-
-- Testing:
-    Thoroughly test your changes before submitting a pull request.
-
-- Issue Tracker:
-    Check the Issue Tracker for tasks.
-
-- Code Review:
-    All contributions undergo a code review process.
-
-- Licensing:
-    Contributions are licensed.
+- **Code Style**: Maintain a consistent code style for readability.
+- **Documentation**: Ensure well-documented code for effective collaboration.
+- **Testing**: Thoroughly test your changes before submitting a pull request.
+- **Issue Tracker**: Check the Issue Tracker for tasks.
+- **Code Review**: All contributions undergo a code review process.
+- **Licensing**: Contributions are licensed.
