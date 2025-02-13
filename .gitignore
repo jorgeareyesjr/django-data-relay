@@ -169,3 +169,9 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Ignore SSL certificates and private keys
+*.key
+*.pem
+id_rsa
+id_dsa
