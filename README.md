@@ -3,7 +3,7 @@
 The **django-data-relay** is a web application designed to serve as a bridge between front-end and back-end systems, facilitating seamless data transfer between applications. Built with [Django](https://www.djangoproject.com/), a free and open-source Python web framework, the **django-data-relay** can collect, aggregate, and provide data from various sources to different destinations in a rapid and scalable fashion. The **django-data-relay** offers a core setup that can be utilized as a template and expanded upon as necessary.
 
 > [!WARNING]
-> ⚠️ The **django-data-relay** not suitable for production use - it runs on Django's lightweight development server, which is intended solely for development purposes. For more information, refer to the [Django documentation](https://docs.djangoproject.com/en/5.1/ref/django-admin/#runserver). Configuring a production server is beyond the scope of this project.
+> The **django-data-relay** not suitable for production use - it runs on Django's lightweight development server, which is intended solely for development purposes. For more information, refer to the [Django documentation](https://docs.djangoproject.com/en/5.1/ref/django-admin/#runserver). Configuring a production server is beyond the scope of this project.
 
 ## Table of Contents
 - [Abstract](#abstract)
@@ -73,7 +73,7 @@ git clone https://github.com/jorgeareyesjr/django-data-relay.git
 pipenv shell
 
 # 2. Run the development server
-python manage.py runserver
+python base/manage.py runserver
 ```
 
 > [!Note]
