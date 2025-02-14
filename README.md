@@ -6,14 +6,14 @@ Launch a local Django development server pre-populated with data and configured 
 > The **Django Data Relay** is not suitable for production use - it runs on Django's lightweight development server, which is intended solely for development purposes. For more information, refer to the [Django documentation](https://docs.djangoproject.com/en/5.1/ref/django-admin/#runserver). Configuring a production server is beyond the scope of this project.
 
 ## Table of Contents
-- [Abstract](#abstract)
-- [Built with](#built-with)
-- [Use Cases](#use-cases)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
+- [Abstract](#-abstract)
+- [Built with](#-built-with)
+- [Use Cases](#-use-cases)
+- [Prerequisites](#-prerequisites)
+- [Installation](#-installation)
 - [Environment Configuration](#-environment-configuration)
-- [Getting Started](#getting-started)
-- [Feedback and Contributions](#feedback-and-contributions)
+- [Getting Started](#-getting-started)
+- [Feedback and Contributions](#-feedback-and-contributions)
 
 ## 🌱 Abstract
 
