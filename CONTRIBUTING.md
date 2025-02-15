@@ -49,12 +49,12 @@ git push origin feature/your-feature-branch
 > - **bugfix/**, for bug fixes (e.g., `bugfix/fix-typo`)
 > - **experiment/**, for experimental features (e.g., `experiment/try-new-ui`)
 > - **refactor/**, for code refactoring (e.g., `refactor/optimize-performance`)
-> - **spike/** - For spikes or research tasks (e.g., `spike/evaluate-tech`)
+> - **spike/**, for spikes or research tasks (e.g., `spike/evaluate-tech`)
 
 ## 👾 Code of Conduct
 
-In an effort to foster a welcoming and inclusive environment for all, please treat each other with respect and kindness. I encourage all participants and contributors to communicate and collaborate positively. Check out the [CODE_OF_CONDUCT](https://github.com/jorgeareyesjr/django-data-relay/blob/main/CODE_OF_CONDUCT) for more details.
+In an effort to foster a welcoming and inclusive environment for all, please treat each other with respect and kindness. I encourage all participants and contributors to communicate and collaborate positively. Check out the [CODE_OF_CONDUCT](https://github.com/jorgeareyesjr/django-data-relay/blob/main/CODE_OF_CONDUCT.md) for more details.
 
 ## 🌐 License
 
-This project is licensed under the Apache License 2.0. Check out the [LICENSE](https://github.com/jorgeareyesjr/django-data-relay/blob/main/LICENSE) for more details.
+This project is licensed under the Apache License 2.0. Check out the [LICENSE](https://github.com/jorgeareyesjr/django-data-relay/blob/main/LICENSE.md) for more details.
