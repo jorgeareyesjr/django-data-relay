@@ -10,6 +10,7 @@ Launch a local Django development server pre-populated with data and configured 
 - [Built With](#-built-with)
 - [Use Cases](#-use-cases)
 - [Requirements](#-requirements)
+- [Cloning vs. Forking](#-cloning-vs-forking)
 - [Installation](#-installation)
 - [Environment Configuration](#-environment-configuration)
 - [Getting Started](#-getting-started)
@@ -60,7 +61,7 @@ The **Django Data Relay** harnesses Django's powerful built-in features, well kn
 > [!NOTE]
 > Django is considered an opinionated framework, meaning it promotes a set of conventions and best practices to help developers structure and standardize their applications efficiently.
 
-## 🧪 Requirements
+## 🔧 Requirements
 
 *Before* installation, ensure you have the following programs and packages installed and working on your device:
 
@@ -80,6 +81,14 @@ The **Django Data Relay** harnesses Django's powerful built-in features, well kn
 # Ensure mkcert is installed
 # Visit https://github.com/FiloSottile/mkcert to download and install mkcert if not already installed
 ```
+
+## 🧪 Cloning vs. Forking
+
+In an effort to promote effective collaboration and avoid contribution confusion, I thought it would be helpful to provide a quick refresher on two fundamental Git commands: `git clone` and `git fork`. For more information, refer to the [Git documentation](https://git-scm.com/book/ms/v2/GitHub-Contributing-to-a-Project). I've outlined the key distinctions between the two below.
+
+- **Clone**: Use `git clone` to create a local copy of the **Django Data Relay** on your machine. This is ideal for personal use or testing without making changes to the original project. Check out the [installation](#-installation) section for more details.
+
+- **Fork**: Use the "Fork" button on GitHub to create a personal copy of the **Django Data Relay** under your account. This is recommended if you want to contribute to the project. After forking, you can clone your forked repository locally, make changes, and submit a pull request to the original repository. Check out [CONTRIBUTING](https://github.com/jorgeareyesjr/django-data-relay/blob/main/CONTRIBUTING) for more details.
 
 ## ⚡ Installation
 
