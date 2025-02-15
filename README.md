@@ -88,7 +88,7 @@ In an effort to promote effective collaboration and avoid contribution confusion
 
 - **Clone**: Use `git clone` to create a local copy of the **Django Data Relay** on your machine. This is ideal for personal use or testing without making changes to the original project. Check out the [installation](#-installation) section for more details.
 
-- **Fork**: Use the "Fork" button on GitHub to create a personal copy of the **Django Data Relay** under your account. This is recommended if you want to contribute to the project. After forking, you can clone your forked repository locally, make changes, and submit a pull request to the original repository. Check out [CONTRIBUTING](https://github.com/jorgeareyesjr/django-data-relay/blob/main/CONTRIBUTING) for more details.
+- **Fork**: Use the "Fork" button on GitHub to create a personal copy of the **Django Data Relay** under your account. This is recommended if you want to contribute to the project. After forking, you can clone your forked repository locally, make changes, and submit a pull request to the original repository. Check out [CONTRIBUTING](https://github.com/jorgeareyesjr/django-data-relay/blob/main/CONTRIBUTING.md) for more details.
 
 ## ⚡ Installation
 
@@ -160,12 +160,12 @@ python base/manage.py runserver_plus --cert-file base/cert.pem --key-file base/k
 
 ## 📬 Feedback and Contributions
 
-I welcome feedback and suggestions! Whether you have encountered any bugs, have ideas for enhancements, or simply want to share some feedback, you're encouraged to connect! Each insight and contribution is an opportunity to make the **Django Data Relay** more robust and user-friendly. Check out [CONTRIBUTING](https://github.com/jorgeareyesjr/django-data-relay/blob/main/CONTRIBUTING) for more details.
+I welcome feedback and suggestions! Whether you have encountered any bugs, have ideas for enhancements, or simply want to share some feedback, you're encouraged to connect! Each insight and contribution is an opportunity to make the **Django Data Relay** more robust and user-friendly. Check out [CONTRIBUTING](https://github.com/jorgeareyesjr/django-data-relay/blob/main/CONTRIBUTING.md) for more details.
 
 ## 👾 Code of Conduct
 
-In an effort to foster a welcoming and inclusive environment for all, please treat each other with respect and kindness. I encourage all participants and contributors to communicate and collaborate positively. Check out the [CODE_OF_CONDUCT](https://github.com/jorgeareyesjr/django-data-relay/blob/main/CODE_OF_CONDUCT) for more details.
+In an effort to foster a welcoming and inclusive environment for all, please treat each other with respect and kindness. I encourage all participants and contributors to communicate and collaborate positively. Check out the [CODE_OF_CONDUCT](https://github.com/jorgeareyesjr/django-data-relay/blob/main/CODE_OF_CONDUCT.md) for more details.
 
 ## 🌐 License
 
-This project is licensed under the Apache License 2.0. Check out the [LICENSE](https://github.com/jorgeareyesjr/django-data-relay/blob/main/LICENSE) for more details.
+This project is licensed under the Apache License 2.0. Check out the [LICENSE](https://github.com/jorgeareyesjr/django-data-relay/blob/main/LICENSE.md) for more details.
