@@ -119,7 +119,7 @@ SECRET_KEY = 'A-S4MPL3-S3CR3T-K3Y-C0MPRIS3D-0F-L0NG-C4R4CT3RS'
 DEBUG = 'false'
 # SECURITY WARNING: don't expose your project to malicious requests!
 # SECURITY NOTE: if DEBUG is set to `false`, ALLOWED_HOSTS requires a value.
-ALLOWED_HOSTS_LIST ='www.example.com, www.example2.com'
+ALLOWED_HOSTS_LIST ='localhost, 127.0.0.1'
 ```
 
 > [!WARNING]
@@ -141,7 +141,7 @@ pipenv install
 # 4. Configure environment variables
 
 # 5. Run the secure development server
-python base/manage.py runserver_plus --cert-file cert.pem --key-file key.pem
+python base/manage.py runserver_plus --cert-file base/cert.pem --key-file base/key.pem
 ```
 
 > [!Note]
