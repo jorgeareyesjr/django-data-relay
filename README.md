@@ -7,13 +7,15 @@ Launch a local Django development server pre-populated with data and configured 
 
 ## Table of Contents
 - [Abstract](#-abstract)
-- [Built with](#-built-with)
+- [Built With](#-built-with)
 - [Use Cases](#-use-cases)
-- [Prerequisites](#-prerequisites)
+- [Requirements](#-requirements)
 - [Installation](#-installation)
 - [Environment Configuration](#-environment-configuration)
 - [Getting Started](#-getting-started)
 - [Feedback and Contributions](#-feedback-and-contributions)
+- [Code of Conduct](#-code-of-conduct)
+- [License](#-license)
 
 ## 🌱 Abstract
 
@@ -25,9 +27,7 @@ Developers face a range of challenges when working in local development environm
 - Built-in security features, including an authentication system for managing accounts and permissions
 - A large and active community for resources and support
 
-## 🔨 Built With
-
-This project was built using the following technologies:
+## 🛠️ Built With
 
 - **Programming Languages:**
     - [Python](https://www.python.org/) - Python is a high-level, general-purpose programming language.
@@ -48,7 +48,7 @@ This project was built using the following technologies:
 
 ## 💡 Use Cases
 
-Django is well known and well-suited for building complex and robust web applications. As such, the **Django Data Relay** harnesses Django's powerful built-in features to support a diverse range of applications and services. Examples include:
+The **Django Data Relay** harnesses Django's powerful built-in features, well known and well-suited for building complex and robust web applications, to support a diverse range of applications and services. Examples include:
 
 - APIs and web services
 - Content Management Systems (CMS)
@@ -60,9 +60,9 @@ Django is well known and well-suited for building complex and robust web applica
 > [!NOTE]
 > Django is considered an opinionated framework, meaning it promotes a set of conventions and best practices to help developers structure and standardize their applications efficiently.
 
-## 🔧 Prerequisites
+## 🧪 Requirements
 
-*Before* installation, ensure you have the following programs installed and working on your computer:
+*Before* installation, ensure you have the following programs and packages installed and working on your device:
 
 ```shell
 # Ensure Git is installed
@@ -91,7 +91,8 @@ To install the **Django Data Relay**, follow these steps:
 # 2. Clone the repository
 git clone https://github.com/jorgeareyesjr/django-data-relay.git
 
-# 3. Navigate to the project's root directory
+# 3. Navigate to the project
+cd django-data-relay
 
 # 4. Generate a local SSL certificate for your localhost/loopback IP address
 mkcert -cert-file base/cert.pem -key-file base/key.pem localhost 127.0.0.1
@@ -99,27 +100,28 @@ mkcert -cert-file base/cert.pem -key-file base/key.pem localhost 127.0.0.1
 # 5. Configure environment variables (see "Environment Configuration" for more details)
 ```
 
-## 🎮 Environment Configuration
+## ⚙️ Environment Configuration
 
 To configure the **Django Data Relay** environment variables, follow these steps:
 
 ```shell
-# 1. Navigate to the project root
+# 1. Navigate to the project
+cd django-data-relay
 
 # 2. Create a .env file
 touch .env
 
-# 3. Add the following code snippet and update the relevant environment variables
+# 3. Add the following code snippet to the .env file, updating any relevant environment variables
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECURITY NOTE: use a long and complex key comprised of uppercase, lowercase, numbers, and special characters.
 SECRET_KEY = 'A-S4MPL3-S3CR3T-K3Y-C0MPRIS3D-0F-L0NG-C4R4CT3RS'
-# SECURITY WARNING: don't run with debug turned on in production!
+# SECURITY WARNING: don't run your project with debug turned on in production!
 # SECURITY NOTE: the DEBUG setting should be set to a boolean value.
-DEBUG = 'false'
+DEBUG = 'false' # DEBUG = 'true' should only be used in development.
 # SECURITY WARNING: don't expose your project to malicious requests!
 # SECURITY NOTE: if DEBUG is set to `false`, ALLOWED_HOSTS requires a value.
-ALLOWED_HOSTS_LIST ='localhost, 127.0.0.1'
+ALLOWED_HOSTS_LIST ='localhost, 127.0.0.1' # If DEBUG is set to `true`, can be ALLOWED_HOSTS_LIST ='' 
 ```
 
 > [!WARNING]
@@ -127,7 +129,7 @@ ALLOWED_HOSTS_LIST ='localhost, 127.0.0.1'
 
 ## 🚀 Getting Started
 
-To use the **Django Data Relay**, follow these steps:
+To launch the **Django Data Relay**, follow these steps:
 
 ```shell
 # 1. Navigate to the project's root directory
@@ -149,11 +151,12 @@ python base/manage.py runserver_plus --cert-file base/cert.pem --key-file base/k
 
 ## 📬 Feedback and Contributions
 
-Whether you have feedback, have encountered any bugs, or have suggestions for enhancements, you're encouraged to connect! Each insight and contribution is an opportunity to make the **Django Data Relay** more robust and user-friendly. Please consider the following guidelines while contributing:
+I welcome feedback and suggestions! Whether you have encountered any bugs, have ideas for enhancements, or simply want to share some feedback, you're encouraged to connect! Each insight and contribution is an opportunity to make the **Django Data Relay** more robust and user-friendly. Check out [CONTRIBUTING](https://github.com/jorgeareyesjr/django-data-relay/blob/main/CONTRIBUTING) for more details.
 
-- **Code Style**: Maintain a consistent code style for readability.
-- **Documentation**: Ensure well-documented code for effective collaboration.
-- **Testing**: Thoroughly test your changes before submitting a pull request.
-- **Issue Tracker**: Check the Issue Tracker for tasks.
-- **Code Review**: All contributions undergo a code review process.
-- **Licensing**: Contributions are licensed.
+## 👾 Code of Conduct
+
+In an effort to foster a welcoming and inclusive environment for all, please treat each other with respect and kindness. I encourage all participants and contributors to communicate and collaborate positively. Check out the [CODE_OF_CONDUCT](https://github.com/jorgeareyesjr/django-data-relay/blob/main/CODE_OF_CONDUCT) for more details.
+
+## 🌐 License
+
+This project is licensed under the Apache License 2.0. Check out the [LICENSE](https://github.com/jorgeareyesjr/django-data-relay/blob/main/LICENSE) for more details.
