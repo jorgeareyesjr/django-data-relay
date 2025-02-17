@@ -45,19 +45,19 @@ if DEBUG:
 
 # SECURITY WARNING: don't let the CSRF cookie travel across insecure connections!
 # SECURITY NOTE: the CSRF_COOKIE_SECURE should be set to a boolean value.
-# CSRF_COOKIE_SECURE = True # TODO
+CSRF_COOKIE_SECURE = True
 
 # SECURITY WARNING: don't let the session cookie travel across insecure connections!
 # SECURITY NOTE: the SESSION_COOKIE_SECURE should be set to a boolean value.
-# SESSION_COOKIE_SECURE = True # TODO
+SESSION_COOKIE_SECURE = True
 
-# SECURITY WARNING: don't let applications make insecure connections!
-# SECURITY NOTE: https://django-secure.readthedocs.io/en/latest/middleware.html#http-strict-transport-security
-# SECURE_HSTS_SECONDS = 60 # TODO
+# SECURITY WARNING: don't let the browser make insecure connections!
+# SECURITY NOTE: Subsequent visits "reset" the browser's HSTS header to the latest policy.
+SECURE_HSTS_SECONDS = 31536000 # 1 year
 
-# SECURITY WARNING: don't let applications make insecure connections!
-# SECURITY NOTE: https://django-secure.readthedocs.io/en/latest/middleware.html#ssl-redirect
-# SECURE_SSL_REDIRECT = True # TODO
+# SECURITY WARNING: don't let connections redirect away from HTTPS.
+# SECURITY NOTE: if SECURE_SSL_REDIRECT is set to `true`, HTTP connections are permanently redirected to HTTPS.
+SECURE_SSL_REDIRECT = True
 
 
 # Application definition
