@@ -15,7 +15,7 @@ The **Django Data Relay** scripts are designed to be run from the command line i
 
 ## 🌱 Abstract
 
-The **Django Data Relay** script are designed to streamline the installation and setup process for users, eliminating the need for manual configuration. By automating the installation process, it simplifies the steps required to get started with the **Django Data Relay**. Leveraging Bash and shebang for efficient execution, users can execute the provided scripts to quickly deploy and use the application rather than spending time on setup, enhancing their overall experience.
+The **Django Data Relay** scripts are designed to streamline the installation and setup process for users, eliminating the need for manual configuration. By automating the installation process, it simplifies the steps required to get started with the **Django Data Relay**. Leveraging Bash and shebang for efficient execution, users can execute the provided scripts to quickly deploy and use the application rather than spending time on setup, enhancing their overall experience.
 
 ## ⚡ Usage
 
