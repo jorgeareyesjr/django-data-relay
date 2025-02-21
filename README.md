@@ -1,3 +1,5 @@
+![Django Data Relay secure url banner](https://github.com/jorgeareyesjr/django-data-relay/blob/main/assets/secure-url-screenshot.png)
+
 # Django Data Relay
 
 Launch a local Django development server that comes with pre-populated with data and pre-configured to enforce HTTPS for secure connections. Serving as a bridge between front-end and back-end systems, the **Django Data Relay** is specifically designed to create an environment that closely simulates a production setting for secure application prototyping and development. Collect, aggregate, and securely deliver data from various sources to support data-driven applications in a rapid and scalable manner.
@@ -147,6 +149,10 @@ To launch the **Django Data Relay**, follow these steps:
 # 2. Run the start script
 ./scripts/start.sh
 ```
+
+> [!IMPORTANT]
+> If the installation and setup steps were successful, the **Django Data Relay** should now be running at: [https://127.0.0.1:8000](https://127.0.0.1:8000).
+> ![Django Data Relay successful installation page](https://github.com/jorgeareyesjr/django-data-relay/blob/main/assets/successful-installation-screenshot.png)
 
 ## 📬 Feedback and Contributions
 
