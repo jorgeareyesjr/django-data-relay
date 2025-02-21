@@ -32,25 +32,27 @@ Developers face a range of challenges when working in local development environm
 
 The **Django Data Relay** is built using a combination of powerful tools and technologies, including:
 
+- **Scripting Languages:**
+    - [Bash](https://www.gnu.org/software/bash/) - A command-line interface and scripting language used primarily in Unix and Linux operating systems
+
 - **Programming Languages:**
-    - [Python](https://www.python.org/) - A high-level, general-purpose programming language.
-    - [Bash](https://www.gnu.org/software/bash/) - A command-line interface and scripting language used primarily in Unix and Linux operating systems.
+    - [Python](https://www.python.org/) - A high-level, general-purpose programming language
 
 - **Frameworks:**
-    - [Django](https://www.djangoproject.com/) - A free and open-source, Python-based web framework that runs on a web server.
+    - [Django](https://www.djangoproject.com/) - A free and open-source, Python-based web framework that runs on a web server
 
 - **Development Tools:**
-    - [pip](https://pip.pypa.io/en/stable/) - A Python package manager used for the installation and management of libraries and dependencies.
-    - [Pipenv](https://pipenv.pypa.io/en/latest/) - A tool that combines package management and virtual environment management for Python projects.
-    - [django-extensions](https://pypi.org/project/django-extensions/) - A collection of custom extensions for the Django Framework.
-    - [Werkzeug](https://pypi.org/project/Werkzeug/) - A comprehensive library for building web applications in Python that follows the Web Server Gateway Interface (WSGI) standard.
+    - [pip](https://pip.pypa.io/en/stable/) - A Python package manager used for the installation and management of libraries and dependencies
+    - [Pipenv](https://pipenv.pypa.io/en/latest/) - A tool that combines package management and virtual environment management for Python projects
+    - [django-extensions](https://pypi.org/project/django-extensions/) - A collection of custom extensions for the Django Framework
+    - [Werkzeug](https://pypi.org/project/Werkzeug/) - A comprehensive library for building web applications in Python that follows the Web Server Gateway Interface (WSGI) standard
 
 - **Security:**
-    - [pyOpenSSL](https://pypi.org/project/pyOpenSSL/) - A high-level Python wrapper around a subset of the OpenSSL library, designed to simplify the use of OpenSSL functions in Python applications.
-    - [mkcert](https://github.com/FiloSottile/mkcert) - A command-line tool to create locally trusted SSL certificates for development purposes.
+    - [pyOpenSSL](https://pypi.org/project/pyOpenSSL/) - A high-level Python wrapper around a subset of the OpenSSL library, designed to simplify the use of OpenSSL functions in Python applications
+    - [mkcert](https://github.com/FiloSottile/mkcert) - A command-line tool to create locally trusted SSL certificates for development purposes
 
 - **Configuration Management:**
-    - [python-dotenv](https://pypi.org/project/python-dotenv/) - A library that allows developers to manage environment variables in Python applications.
+    - [python-dotenv](https://pypi.org/project/python-dotenv/) - A library that allows developers to manage environment variables in Python applications
 
 ## 💡 Use Cases
 
