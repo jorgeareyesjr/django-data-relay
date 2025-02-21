@@ -1,4 +1,4 @@
-![Django Data Relay secure url banner](https://github.com/jorgeareyesjr/django-data-relay/blob/main/assets/secure-url-screenshot.png)
+![Django Data Relay](https://github.com/jorgeareyesjr/django-data-relay/blob/main/assets/successful-installation-screenshot.png)
 
 # Django Data Relay
 
@@ -152,7 +152,6 @@ To launch the **Django Data Relay**, follow these steps:
 
 > [!IMPORTANT]
 > If the installation and setup steps were successful, the **Django Data Relay** should now be running at: [https://127.0.0.1:8000](https://127.0.0.1:8000).
-> ![Django Data Relay successful installation page](https://github.com/jorgeareyesjr/django-data-relay/blob/main/assets/successful-installation-screenshot.png)
 
 ## 📬 Feedback and Contributions
 
