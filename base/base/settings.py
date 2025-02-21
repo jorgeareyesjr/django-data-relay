@@ -11,30 +11,39 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 import os
 from pathlib import Path
+from dotenv import load_dotenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+ENV_DIR = BASE_DIR.parent / 'env' / '.env'
 
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
+# Load and access environment variables.
+load_dotenv(ENV_DIR)
 
-# SECURITY WARNING: keep the secret key used in production secret!
-# SECURITY NOTE: use a key comprised of uppercase, lowercase, numbers, and special characters (minimum 50 characters).
-SECRET_KEY = os.environ.get('SECRET_KEY')
+ENV_SECRET_KEY = os.environ.get('SECRET_KEY')
+ENV_DEBUG_KEY = os.environ.get('DEBUG_KEY', 'false').lower() == 'true'
+ENV_ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS')
+ENV_CSRF_COOKIE_SECURE = os.environ.get('CSRF_COOKIE_SECURE', 'false').lower() == 'true'
+ENV_SESSION_COOKIE_SECURE = os.environ.get('SESSION_COOKIE_SECURE', 'false').lower() == 'true'
+ENV_SECURE_HSTS_SECONDS = int(os.environ.get('SECURE_HSTS_SECONDS', 0))
+ENV_SECURE_SSL_REDIRECT = os.environ.get('SECURE_SSL_REDIRECT', 'false').lower() == 'true'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-# SECURITY NOTE: the DEBUG setting should be set to a boolean value.
-DEBUG = os.environ.get('DEBUG', 'false').lower() == 'true'
 
-# SECURITY WARNING: don't expose your project to malicious requests!
-# SECURITY NOTE: if DEBUG is set to `false`, ALLOWED_HOSTS requires a value.
+# Security settings
+
+SECRET_KEY = ENV_SECRET_KEY
+DEBUG = ENV_DEBUG_KEY
 ALLOWED_HOSTS = []
+CSRF_COOKIE_SECURE = ENV_CSRF_COOKIE_SECURE
+SESSION_COOKIE_SECURE = ENV_SESSION_COOKIE_SECURE
+SECURE_HSTS_SECONDS = ENV_SECURE_HSTS_SECONDS
+SECURE_SSL_REDIRECT = ENV_SECURE_SSL_REDIRECT
 
-# Add any additional ALLOWED_HOSTS, if provided.
-if os.environ.get('ALLOWED_HOSTS_LIST'):
-    ALLOWED_HOSTS_LIST = os.environ.get('ALLOWED_HOSTS_LIST').split(', ')
-    for host in ALLOWED_HOSTS_LIST:
+# Add any environment-defined allowed hosts
+if ENV_ALLOWED_HOSTS:
+    ENV_ALLOWED_HOSTS_LIST = ENV_ALLOWED_HOSTS.split(', ')
+    for host in ENV_ALLOWED_HOSTS_LIST:
         ALLOWED_HOSTS.append(host)
 
 # Add any development-specific ALLOWED_HOSTS, if DEBUG is set to `true`.
@@ -42,22 +51,6 @@ if DEBUG:
     ALLOWED_HOSTS.append('localhost') # Add localhost to ALLOWED_HOSTS.
     ALLOWED_HOSTS.append('127.0.0.1') # Add IPv4 loopback address to ALLOWED_HOSTS.
     ALLOWED_HOSTS.append('[::1]') # Add IPv6 loopback address to ALLOWED_HOSTS.
-
-# SECURITY WARNING: don't let the CSRF cookie travel across insecure connections!
-# SECURITY NOTE: the CSRF_COOKIE_SECURE should be set to a boolean value.
-CSRF_COOKIE_SECURE = True
-
-# SECURITY WARNING: don't let the session cookie travel across insecure connections!
-# SECURITY NOTE: the SESSION_COOKIE_SECURE should be set to a boolean value.
-SESSION_COOKIE_SECURE = True
-
-# SECURITY WARNING: don't let the browser make insecure connections!
-# SECURITY NOTE: Subsequent visits "reset" the browser's HSTS header to the latest policy.
-SECURE_HSTS_SECONDS = 31536000 # 1 year
-
-# SECURITY WARNING: don't let connections redirect away from HTTPS.
-# SECURITY NOTE: if SECURE_SSL_REDIRECT is set to `true`, HTTP connections are permanently redirected to HTTPS.
-SECURE_SSL_REDIRECT = True
 
 
 # Application definition
